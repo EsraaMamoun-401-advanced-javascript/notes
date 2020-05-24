@@ -1,0 +1,35 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "start": "node index.js",
+    "lint": "eslint '**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EsraaMamoun-401-advanced-javascript/notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EsraaMamoun-401-advanced-javascript/notes/issues"
+  },
+  "homepage": "https://github.com/EsraaMamoun-401-advanced-javascript/notes#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "minimist": "^1.2.5",
+    "mongoose": "^5.9.15",
+    "supergoose": "^0.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "jest": "^26.0.1"
+  }
+}
