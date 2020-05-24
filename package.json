@@ -26,7 +26,8 @@
     "dotenv": "^8.2.0",
     "minimist": "^1.2.5",
     "mongoose": "^5.9.15",
-    "supergoose": "^0.2.6"
+    "supergoose": "^0.2.6",
+    "underscore.string": "^3.3.5"
   },
   "devDependencies": {
     "eslint": "^7.1.0",
