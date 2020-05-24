@@ -6,8 +6,8 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/EsraaMamoun-401-advanced-javascript/the-notes/pull/1)
-- [ci/cd](https://github.com/EsraaMamoun-401-advanced-javascript/the-notes/actions) (GitHub Actions)
+- [submission PR](https://github.com/EsraaMamoun-401-advanced-javascript/notes/pull/1)
+- [ci/cd](https://github.com/EsraaMamoun-401-advanced-javascript/notes/actions) (GitHub Actions)
 <!-- - [back-end server url](http://xyz.com) (when applicable) -->
 <!-- - [front-end application](http://xyz.com) (when applicable) -->
 
