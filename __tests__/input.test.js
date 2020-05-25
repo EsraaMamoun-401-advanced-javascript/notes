@@ -16,7 +16,7 @@ describe('Input Module', () => {
     expect(theTest == { action: 'add', playload: 'my note', category: undefined }).toBeFalsy();
   });
 
-  let theActions = ['add', 'a', 'list', 'l', 'delete', 'd', 'category', 'c'];
+  let theActions = ['add', 'a', 'list', 'l', 'delete', 'd', 'category', 'c', 'update', 'u'];
 
   theActions.forEach(thisKey => {
 

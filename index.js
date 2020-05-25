@@ -9,6 +9,7 @@ const DB_URI = process.env.MONGODB_URI;
 mongoose.connect(DB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  useFindAndModify: false,
 });
 
 const Input = require('./lib/input.js');

@@ -1,4 +1,4 @@
-# LAB - Class 03
+# LAB - Class 04
 
 ## Project: Notesy
 
@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/EsraaMamoun-401-advanced-javascript/notes/pull/1)
+- [submission PR](https://github.com/EsraaMamoun-401-advanced-javascript/notes/pull/4)
 - [ci/cd](https://github.com/EsraaMamoun-401-advanced-javascript/notes/actions) (GitHub Actions)
 <!-- - [back-end server url](http://xyz.com) (when applicable) -->
 <!-- - [front-end application](http://xyz.com) (when applicable) -->
@@ -34,6 +34,8 @@
 - `node index.js -l 'category name'` 
 - `node index.js --delete 'id note'`
 - `node index.js -d 'id note'` 
+- `node index.js -update 'Id note' --new 'new text'` 
+- `node index.js 'Id note' -n 'new text'`
 OR
 - `./index.js --add 'your note' --category 'categoru name'`
 - `./index.js -a 'your note' -c 'category name'` 
@@ -41,7 +43,8 @@ OR
 - `./index.js -l 'category name'` 
 - `./index.js --delete 'id note'`
 - `./index.js -d 'id note'` 
-
+- `./index.js -update 'Id note' --new 'new text'` 
+- `./index.js -u 'Id note' -n 'new text'` 
 
 #### How to use your library (where applicable)
 - Lint Tests: `npm run lint`
@@ -52,9 +55,10 @@ OR
  > - Jest test: `npm test` - to run the test for two files 
  > - Jest test: `npm test input.test.js`
  > - Jest test: `npm test notes.test.js`
+ > - Jest test: `npm test notes-collection.test.js`
  > - console.log
 <!-- - Any tests of note?
 - Describe any tests that you did not complete, skipped, etc -->
 
 #### UML
-![UML](img/umlImage2.jpeg)
+![UML](img/umlImage3.jpeg)
