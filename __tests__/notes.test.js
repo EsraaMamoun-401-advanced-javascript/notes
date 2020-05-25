@@ -6,68 +6,33 @@ jest.spyOn(global.console, 'log');
 
 describe('Notes Module', () => {
 
-  it('add() when the action is null', () => {
+  it('execute() to get update', () => {
     let newNote = new Notes();
-    let obj = { action: null, playload: 'hi iam the new note', category: 'self' };
-    newNote.add(obj)
-      .then(() => {
-        expect(console.log).toHaveBeenCalled();
-      });
+    let objTest = { action: 'update', payload: 'something new', id: '5ec9a22b683741064d1e485c' };
+    newNote.execute(objTest);
+    expect(console.log).toHaveBeenCalled();
   });
 
-  it('add() when the action is wrong', () => {
+  it('execute() to get list', () => {
     let newNote = new Notes();
-    let obj = { action: 'new', playload: 'hi iam the new note', category: 'self' };
-    newNote.add(obj)
-      .then(() => {
-        expect(console.log).toHaveBeenCalled();
-      });
-  });
-  
-  it('list() when the action is undefined', () => {
-    let newNote = new Notes();
-    let obj = { action: undefined, category: 'light' };
-    newNote.list(obj)
-      .then(() => {
-        expect(console.log).toHaveBeenCalled();
-      });
+    let objTest = { action: 'list', category: 'test' };
+    newNote.execute(objTest);
+    expect(console.log).toHaveBeenCalled();
   });
 
-  it('delete() when the action is undefined or the id is not exist', () => {
+  it('execute() to get delete', () => {
     let newNote = new Notes();
-    let obj = { action: undefined, id: '' };
-    newNote.delete(obj)
-      .then(() => {
-        expect(console.log).toHaveBeenCalled();
-      });
+    let objTest = { action: 'delete', id: '5ec9a22b683741064d1e485c' };
+    newNote.execute(objTest);
+    expect(console.log).toHaveBeenCalled();
   });
 
-  it('add() when the action is correct (add)', () => {
-    let newNote = new Notes();
-    let obj = { action: 'add', playload: 'hi iam the new note', category: 'self' };
-    newNote.add(obj)
-      .then(() => {
-        expect(console.log).toHaveBeenCalled();
-      });
-  });
-
-  it('list() when the action is correct (list) and the category is exist', () => {
-    let newNote = new Notes();
-    let obj = { action: 'list', category: 'something' };
-    newNote.list(obj)
-      .then(() => {
-        expect(console.log).toHaveBeenCalled();
-      });
-  });
-
-  it('delete() when the action is correct (delete) and the id is exist', () => {
-    let newNote = new Notes();
-    let obj = { action: 'delete', id: '5ec7cfb5e8553c0219538c78' };
-    newNote.delete(obj)
-      .then(() => {
-        expect(console.log).toHaveBeenCalled();
-      });
-
+  it('execute() without specify category', () => {
+    let options = new Notes();
+    let input = { action: 'a', category: undefined, id: undefined, payload: 'some note'};
+    options.execute(input);
+    expect(console.log).toHaveBeenCalled();
   });
 
 });
+
