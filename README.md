@@ -43,7 +43,7 @@ OR
 - `./index.js -l 'category name'` 
 - `./index.js --delete 'id note'`
 - `./index.js -d 'id note'` 
-- `./index.js -update 'Id note' --new 'new text'` 
+- `./index.js --update 'Id note' --newnote 'new text'` 
 - `./index.js -u 'Id note' -n 'new text'` 
 
 #### How to use your library (where applicable)
